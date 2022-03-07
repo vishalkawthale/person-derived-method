@@ -7,7 +7,6 @@ import org.springframework.stereotype.Repository;
 
 import java.util.Date;
 
-@Repository
 public interface PersonRepository extends CrudRepository<Person, Integer>, JpaSpecificationExecutor<Person> {
 
     Iterable<Person> findByFirstName(String firstName);
